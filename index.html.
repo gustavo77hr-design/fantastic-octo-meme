@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figment Invest</title>
+    <style>
+        /* Reset e estilos base */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; color:#333; background:#f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        button { cursor: pointer; }
+
+        /* Header */
+        header {
+            background:#1a1a1a;
+            color:white;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding:20px;
+            position: sticky;
+            top:0;
+            z-index: 1000;
+        }
+        header .logo { font-size:1.8em; font-weight:bold; }
+        nav a { margin:0 15px; color:white; font-weight:500; }
+        .cta-header {
+            background:#ff6b00;
+            padding:10px 20px;
+            border-radius:6px;
+            font-weight:bold;
+        }
+
+        /* Hero */
+        .hero {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:80px 20px;
+            background: linear-gradient(to right, #ff6b00, #ff9b3d);
+            color:white;
+        }
+        .hero img { max-width:300px; margin:20px 0; }
+        .hero button {
+            background:white;
+            color:#ff6b00;
+            border:none;
+            padding:15px 30px;
+            font-size:1.2em;
+            border-radius:8px;
+            margin-top:20px;
+            font-weight:bold;
+        }
+
+        /* Seções */
+        section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+        h2 { text-align:center; margin-bottom:40px; color:#1a1a1a; }
+
+        /* Como funciona */
+        .steps { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:30px; text-align:center; }
+        .step { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+        .step h3 { margin-bottom:10px; color:#ff6b00; }
+
+        /* Planos */
+        .plans { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+        .plan { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center; }
+        .plan h3 { color:#ff6b00; margin-bottom:15px; }
+        .plan p { margin-bottom:10px; font-weight:bold; }
+        .plan button { background:#ff6b00; color:white; border:none; padding:10px 20px; border-radius:6px; font-weight:bold; }
+
+        /* Contadores */
+        .counters { display:flex; justify-content:center; gap:50px; margin-top:40px; }
+        .counter { text-align:center; }
+        .counter span { display:block; font-size:2.5em; color:#ff6b00; }
+
+        /* Programa de indicação */
+        .referral { background:#fff3e0; padding:40px 20px; border-radius:10px; text-align:center; }
+        .referral p { margin:15px 0; font-weight:bold; }
+
+        /* Benefícios */
+        .benefits { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+        .benefit { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center; }
+
+        /* Notícias */
+        .news { background:white; padding:40px 20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+        .news p { margin-bottom:10px; }
+
+        /* Footer */
+        footer {
+            background:#1a1a1a;
+            color:white;
+            padding:40px 20px;
+            text-align:center;
+        }
+        footer a { color:#ff6b00; margin:0 10px; }
+
+        /* Responsivo */
+        @media(max-width:768px){
+            .hero img { max-width:80%; }
+            .counters { flex-direction:column; gap:30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Figment Invest</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#how">Benefícios</a>
+            <a href="#plans">Investimentos</a>
+            <a href="#news">Notícias</a>
+            <a href="#footer">Contato</a>
+        </nav>
+        <a class="cta-header" href="https://www.pix.com.br/">Comece a Investir – R$15</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <h1>INVISTA COM SEGURANÇA E VEJA RESULTADOS EM POUCO TEMPO</h1>
+        <p>Investimentos de curto prazo e alta rentabilidade</p>
+        <img src="https://via.placeholder.com/250x500?text=App+Figment" alt="App Figment">
+        <button onclick="window.location.href='https://www.pix.com.br/'">Liberar Acesso Agora – R$15</button>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="how">
+        <h2>Como Funciona</h2>
+        <div class="steps">
+            <div class="step"><h3>Passo 1</h3>Faça um cadastro gratuito</div>
+            <div class="step"><h3>Passo 2</h3>Deposite o valor mínimo</div>
+            <div class="step"><h3>Passo 3</h3>Escolha o plano e comece a lucrar</div>
+            <div class="step"><h3>Passo 4</h3>Saque seus lucros a qualquer momento</div>
+        </div>
+        <p style="text-align:center; margin-top:20px;">Nota: Capital (principal) retirado ao final do ciclo</p>
+    </section>
+
+    <!-- Planos -->
+    <section id="plans">
+        <h2>Planos e Exemplos de Lucro</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Inicial Premium</h3>
+                <p>Investimento: R$50</p>
+                <p>Ciclo: 20 dias</p>
+                <p>Lucro Diário: R$2,5</p>
+                <p>Total ao Final: R$100</p>
+                <button>Investir Agora</button>
+            </div>
+            <div class="plan">
+                <h3>Expansão</h3>
+                <p>Investimento: R$200</p>
+                <p>Ciclo: 25 dias</p>
+                <p>Lucro Diário: R$9,6</p>
+                <p>Total ao Final: R$440</p>
+                <button>Investir Agora</button>
+            </div>
+            <div class="plan">
+                <h3>Equilibrado Estratégico</h3>
+                <p>Investimento: R$1.000</p>
+                <p>Ciclo: 30 dias</p>
+                <p>Lucro Diário: R$45</p>
+                <p>Total ao Final: R$2.350</p>
+                <button>Investir Agora</button>
+            </div>
+            <div class="plan">
+                <h3>Prime Exclusivo</h3>
+                <p>Investimento: R$5.000</p>
+                <p>Ciclo: 35 dias</p>
+                <p>Lucro Diário: R$210</p>
+                <p>Total ao Final: R$12.350</p>
+                <button>Investir Agora</button>
+            </div>
+        </div>
+
+        <!-- Contadores -->
+        <div class="counters">
+            <div class="counter">
+                <span id="users">0</span>
+                Usuários Ativos
+            </div>
+            <div class="counter">
+                <span id="profit">0</span>
+                Lucros Distribuídos (R$)
+            </div>
+        </div>
+    </section>
+
+    <!-- Programa de indicação -->
+    <section class="referral">
+        <h2>Programa de Indicação</h2>
+        <p>Nível 1: R$10 + 15% dos lucros diários do indicado</p>
+        <p>Nível 2: 5% dos lucros diários do indicado do seu indicado</p>
+        <p>Quanto mais você indicar, maiores os ganhos!</p>
+    </section>
+
+    <!-- Benefícios -->
+    <section>
+        <h2>Benefícios Exclusivos para Novos Usuários</h2>
+        <div class="benefits">
+            <div class="benefit">Bônus de R$10 no cadastro</div>
+            <div class="benefit">Depósito mínimo R$30</div>
+            <div class="benefit">Saque mínimo R$30</div>
+            <div class="benefit">Receba seu investimento de volta no fim do plano</div>
+        </div>
+    </section>
+
+    <!-- Notícias / Prova Social -->
+    <section id="news">
+        <h2>Últimas Notícias</h2>
+        <div class="news">
+            <p>“Figment selecionada como parceira de staking da Grayscale”</p>
+            <p>“Mais de 10.000 usuários ativos confiando em nossos planos”</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>Contato: suporte@figmentinvest.com</p>
+        <p>
+            <a href="#">Termos de Uso</a> | 
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Redes Sociais</a>
+        </p>
+        <button onclick="window.location.href='https://www.pix.com.br/'" style="margin-top:20px; background:#ff6b00; color:white; border:none; padding:12px 25px; border-radius:6px; font-weight:bold;">Liberar Acesso Agora – R$15 via Pix</button>
+    </footer>
+
+    <!-- JS para contadores animados -->
+    <script>
+        function animateValue(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            let timer = setInterval(function() {
+                current += increment;
+                obj.textContent = current.toLocaleString();
+                if (current == end) clearInterval(timer);
+            }, stepTime);
+        }
+
+        // Animar contadores com números fictícios
+        animateValue("users", 0, 10234, 2000); // Usuários ativos
+        animateValue("profit", 0, 523450, 2500); // Lucros distribuídos
+    </script>
+
+</body>
+</html>
